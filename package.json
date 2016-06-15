@@ -1,8 +1,11 @@
 {
   "name": "rad-big-calendar",
-  "version": "0.9.13",
+  "version": "0.9.14",
   "description": "Calendar! with events",
-  "author": ["Jason Quense <monastic.panic@gmail.com>", "Louis Capitanchik <contact@louiscap.co>"],
+  "author": [
+    "Jason Quense <monastic.panic@gmail.com>",
+    "Louis Capitanchik <contact@louiscap.co>"
+  ],
   "repository": "commander-lol/react-big-calendar",
   "license": "MIT",
   "main": "lib/index.js",
