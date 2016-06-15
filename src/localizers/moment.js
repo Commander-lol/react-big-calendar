@@ -46,7 +46,7 @@ export default function (moment){
 
   return setLocalizer({
 
-    firstOfWeek(culture) {
+    firstOfWeek() {
       return 0
       // let data = culture ? moment.localeData(culture) : moment.localeData();
       // return data ? data.firstDayOfWeek() : 0
