@@ -13,6 +13,12 @@ let Week = React.createClass({
     return TimeGrid.defaultProps
   },
 
+  getFirstDate() {
+    let { date } = this.props
+    let firstOfWeek = localizer.startOfWeek(culture)
+    return dates.startOf(date, 'week', firstOfWeek)
+  },
+
   render() {
     let { date } = this.props
     let { start, end } = Week.range(date, this.props)

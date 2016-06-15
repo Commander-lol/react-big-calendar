@@ -30,3 +30,4 @@ node_modules
 
 # Webstorm ide files
 .idea
+examples/static

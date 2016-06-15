@@ -353,6 +353,10 @@ let Calendar = React.createClass({
     return views[this.props.view];
   },
 
+  getFirstDate() {
+    return this.refs.view == null ? new Date(Date.now()) : this.refs.view.getFirstDate()
+  },
+
   render() {
     let {
         view, toolbar, events

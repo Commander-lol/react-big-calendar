@@ -106,6 +106,11 @@ let MonthView = React.createClass({
     window.removeEventListener('resize', this._resizeListener, false)
   },
 
+  getFirstDate() {
+    let { date, culture } = this.props
+    return chunk(dates.visibleDays(date, culture), 7)[0][0]
+  },
+
   render() {
     var { date, culture, weekdayFormat } = this.props
       , month = dates.visibleDays(date, culture)
