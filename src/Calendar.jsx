@@ -461,4 +461,8 @@ let Calendar = React.createClass({
   }
 });
 
+Calendar.getFirstDate = function() {
+  return this.getFirstDate()
+}
+
 export default uncontrollable(Calendar, { view: 'onView', date: 'onNavigate', selected: 'onSelectEvent' })
